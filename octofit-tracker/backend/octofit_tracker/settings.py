@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-x=t4jsm3sw8unch-7%ablp^iz0@e792=o-5($9v0)zic27$k#k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', 'laughing-space-train-5v6gppxgggfr44-8000.app.github.dev']
 
 
 # Application definition
@@ -85,6 +85,11 @@ DATABASES = {
         'PORT': 27017,
     }
 }
+
+# Add missing MongoDB settings
+MONGO_HOST = 'localhost'
+MONGO_PORT = 27017
+MONGO_DB_NAME = 'octofit_db'
 
 
 # Password validation
